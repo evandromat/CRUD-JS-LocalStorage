@@ -16,3 +16,6 @@ Projeto com foco em JavaScript mas com alguns recursos de HTML e CSS interessant
 > HTML <br>
 > CSS<br>
 > JavaScript<br>
+
+<br>
+<img src="https://github.com/evandromat/CRUD-JS-LocalStorage/blob/main/tela.png?raw=true" width="767" title="hover text">
