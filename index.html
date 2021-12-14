@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/button.css">
+    <title>CRUD - JavaScript - LocalStorag</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th class="th">Nome</th>
+                    <th class="th">E-mail</th>
+                    <th class="th">Celular</th>
+                    <th class="th">Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                               
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente">
+                    <input type="text" id="telefone" class="modal-field" placeholder="Celular do Cliente">
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente">
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Editar Cliente</h2>
+                    <span class="modal-close" id="modalClose2">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" id="nome2" class="modal-field" placeholder="Nome do Cliente">
+                    <input type="email" id="email2" class="modal-field" placeholder="e-mail do Cliente">
+                    <input type="text" id="telefone2" class="modal-field" placeholder="Celular do Cliente">
+                    <input type="text" id="cidade2" class="modal-field" placeholder="Cidade do Cliente">
+                    <input type="hidden" id="id_oculto" data-id="">
+                </form>
+                <footer class="modal-footer">
+                    <button id="editar" class="button green">Atualizar</button>
+                    <button id="cancelar2" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer class="main">
+       <p>Copyright &copy; Evandro Rocha</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root{
+    --hue-color: 210;
+
+    --first-color: hsl(var(--hue-color), 93%, 43%);
+    --first-color-second:hsl(var(--hue-color), 69%, 75%);
+    --first-color-second-tr:hsl(var(--hue-color), 69%, 95%);
+    --buttom-color-primary:hsl(var(--hue-color), 95%, 67%);
+    --buttom-color-primary-ini:hsl(var(--hue-color), 85%, 67%);
+    --buttom-color-secondary:hsl(349, 49%, 60%);
+
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color:hsl(var(--hue-color), 60%, 99%) ;
+    --text-color: hsl(var(--hue-color), 58%, 92%);
+    --container-color: #FFF;
+
+    --body-font: 'Poppins', sans-serif;
+    
+    --h2-font-size: 1.25rem;
+
+
+}
+*{
+    font-family: var(--body-font);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: var(--first-color);
+}
+.header-title{
+    margin: 0px auto 0px auto;
+    padding: 2px;
+    color: var(--text-color);
+}
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+
+.records th{
+    height: 50px;
+    background-color: var(--first-color-second);
+    padding-left: 20px;
+    font-size: 1.2rem;    
+}
+.records td{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.records th:last-child,
+.records td:last-child{
+    padding: 0;
+    min-width: 140px;
+    text-align: center;
+}
+
+.records tr:nth-child(odd) {
+    background-color:#fff;
+}
+.records tr:nth-child(even){
+    background-color:var(--first-color-second-tr);
+}
+.records tr:hover{
+    background-color: inherit;
+}
+
+footer.main{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+
+}
+@media(max-width:480px){
+
+    .records th{
+        margin: 1px;
+        padding: 1px;
+        font-size: 15px;
+        width: 10px;
+    }
+ 
+    .records tr{
+        
+        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .records td:not(:first-child){
+      
+    }
+
+    .records td{
+        max-width: 100px;
+        overflow: auto;
+    }
+
+    .records tr:hover{
+        background-color: inherit;
+    }
+}
